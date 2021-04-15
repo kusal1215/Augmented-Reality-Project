@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- include A-Frame obviously -->
+        <script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>       
+         <!-- include ar.js for A-Frame -->
+        <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>     
+    </head>
+    
+
+
+    <body style='margin : 0px; padding:0px; overflow: hidden;'>
+        <a-scene embedded arjs>
+                <a-assets>
+                  <a-asset-item id="AnimalCell" src="assets/AnimalCell/scene.gltf"></a-asset-item>
+                  <a-asset-item id="Mitochondria_o" src="assets/Mitochondria/Mitochondria.glb"></a-asset-item>
+                  <a-asset-item id="skele1-obj" src="assets/Skelton/skele1.obj"></a-asset-item>
+                  <a-asset-item id="skele1-mtl" src="assets/Skelton/skele1.mtl"></a-asset-item>
+                  <a-asset-item id="Human brain-obj" src="assets/Brain/Human brain.obj"></a-asset-item>
+                  <a-asset-item id="Human brain-mtl" src="assets/Brain/Human brain.mtl"></a-asset-item>
+                  <a-asset-item id="tinker-obj" src="assets/Kunk/tinker.obj"></a-asset-item>
+                  <a-asset-item id="tinker-mtl" src="assets/Kunk/obj.mtl"></a-asset-item>
+                  <a-asset-item id="Kidny" src="assets/Kidny/scene.gltf"></a-asset-item>
+                </a-assets>
+              
+
+                <a-marker type='pattern' url='AR_Images/pattern-it18119572@2x.patt'>
+                    <a-entity gltf-model="#AnimalCell" position="0 0 0" rotation="0 0 0" scale="0.003 0.003 0.003"></a-entity>
+                    <a-entity position="1 0 0" scale="3 3 3" text="value: IT18119572;color:red"></a-entity>
+                </a-marker>
+
+                <a-marker type='pattern' url='AR_Images/pattern-it18119718@2x.patt'>
+                    <a-entity obj-model="obj: #tinker-obj; mtl: #tinker-mtl"  position="0 0 0" rotation="-90 0 0" scale="0.007 0.007 0.007"></a-entity>
+                    <a-entity position="1 0 0" scale="3 3 3" text="value: It18119718;color:red"></a-entity>
+                </a-marker>
+
+                <a-marker type='pattern' url='AR_Images/pattern-it18120226@2x.patt'>
+                    <a-entity gltf-model="#Mitochondria_o" position="0 0 1" rotation="0 0 0" scale="0.01 0.01 0.01"></a-entity>
+                    <a-entity position="1 0 0" scale="3 3 3" text="value: it18120226;color:red"></a-entity>
+                </a-marker>
+
+                <a-marker type='pattern' url='AR_Images/pattern-it18113914@2x.patt'>
+                    <a-entity obj-model="obj: #Human brain-obj; mtl: #Human brain-mtl" position="0 0 0"  rotation="180 0 0" scale="0.03 0.03 0.03"></a-entity>
+                    <a-entity position="1 0 0" scale="3 3 3" text="value: it18113914;color:red"></a-entity>
+                </a-marker>
+
+                <a-marker type='pattern' url='AR_Images/pattern-Extra@2x.patt'>
+                    <a-entity obj-model="obj: #skele1-obj; mtl: #skele1-mtl"  position="0 0 1" rotation="90 180 0" scale="1.5 1.5 1.5"></a-entity>
+                </a-marker>
+
+                <a-marker type='pattern' url='AR_Images/pattern-Extra 2@2x.patt'>
+                    <a-entity gltf-model="#Kidny" position="0 0 0" rotation="-90 -150 180" scale="0.2 0.2 0.2"></a-entity>
+                </a-marker>
+                
+                <a-entity camera></a-entity>
+        </a-scene>
+    </body>
+</html>
