@@ -14,6 +14,7 @@
                 <a-assets>
                   <a-asset-item id="AnimalCell" src="assets/AnimalCell/scene.gltf"></a-asset-item>
                   <a-asset-item id="Mitochondria_o" src="assets/Mitochondria/Mitochondria.glb"></a-asset-item>
+				  <a-asset-item id="HumanBloodCell" src="assets/BloodCell/scene.gltf"></a-asset-item>
                   <a-asset-item id="skele1-obj" src="assets/Skelton/skele1.obj"></a-asset-item>
                   <a-asset-item id="skele1-mtl" src="assets/Skelton/skele1.mtl"></a-asset-item>
                   <a-asset-item id="Human brain-obj" src="assets/Brain/Human brain.obj"></a-asset-item>
@@ -26,22 +27,22 @@
 
                 <a-marker type='pattern' url='AR_Images/pattern-it18119572@2x.patt'>
                     <a-entity gltf-model="#AnimalCell" position="0 0 0" rotation="0 0 0" scale="0.003 0.003 0.003"></a-entity>
-                    <a-entity position="1 0 0" scale="3 3 3" text="value: IT18119572;color:red"></a-entity>
+                    <a-entity position="-1 -6 0" scale="5 5 5" rotation="-90 0 0" text="value: IT18119572_Chathuranga W.W.P.K;color:red"></a-entity>
                 </a-marker>
 
                 <a-marker type='pattern' url='AR_Images/pattern-it18119718@2x.patt'>
                     <a-entity obj-model="obj: #tinker-obj; mtl: #tinker-mtl"  position="0 0 0" rotation="-90 0 0" scale="0.007 0.007 0.007"></a-entity>
-                    <a-entity position="1 0 0" scale="3 3 3" text="value: It18119718;color:red"></a-entity>
+                    <a-entity position="-1 -3 0" scale="5 5 5" rotation="-90 0 0" text="value:IT18119718_Liyanage D.R.Y;color:red"></a-entity>
                 </a-marker>
 
                 <a-marker type='pattern' url='AR_Images/pattern-it18120226@2x.patt'>
-                    <a-entity gltf-model="#Mitochondria_o" position="0 0 1" rotation="0 0 0" scale="0.01 0.01 0.01"></a-entity>
-                    <a-entity position="1 0 0" scale="3 3 3" text="value: it18120226;color:red"></a-entity>
+                    <a-entity gltf-model="#Mitochondria_o" position="0 0 0" rotation="0 0 0" scale="0.01 0.01 0.01"></a-entity>
+                    <a-entity position="0 0 -1" scale="4 4 4" text="value: it18120226_Oshadi Yashodhika G. B. O.;color:red"></a-entity>
                 </a-marker>
 
-                <a-marker type='pattern' url='AR_Images/pattern-it18113914@2x.patt'>
-                    <a-entity obj-model="obj: #Human brain-obj; mtl: #Human brain-mtl" position="0 0 0"  rotation="180 0 0" scale="0.03 0.03 0.03"></a-entity>
-                    <a-entity position="1 0 0" scale="3 3 3" text="value: it18113914;color:red"></a-entity>
+                 <a-marker type='pattern' url='AR_Images/pattern-it18113914@2x.patt'>
+                    <a-entity gltf-model="#HumanBloodCell" position="0 0 0"  rotation="-5 100 -50" scale="0.95 1 1"></a-entity>
+                    <a-entity position="-0.2 -1 -1" scale="4 4 4" text="value: it18113914_De Silva L. S. R.;color:red"></a-entity>
                 </a-marker>
 
                 <a-marker type='pattern' url='AR_Images/pattern-Extra@2x.patt'>
